@@ -15,7 +15,7 @@ for i in range(height):
     for j in range(width):
         grid[i][j] = noise([i / height, j / width])
 
-# Plot contour lines: with blackbackground
+# Plot contour lines with black background
 plt.figure(figsize=(8, 8), facecolor='black')
 plt.contour(
     grid,
@@ -30,3 +30,4 @@ plt.gca().set_facecolor("black")  # black background for axes
 plt.axis("off")
 plt.tight_layout()
 plt.show()
+
